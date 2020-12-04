@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Qanas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Question</th>
+      <th>Answer</th>
+      <th>Createddate</th>
+      <th>Version</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @qanas.each do |qana| %>
+      <tr>
+        <td><%= qana.topic %></td>
+        <td><%= qana.question %></td>
+        <td><%= qana.answer %></td>
+        <td><%= qana.createddate %></td>
+        <td><%= qana.version %></td>
+        <td><%= link_to 'Show', qana %></td>
+        <td><%= link_to 'Edit', edit_qana_path(qana) %></td>
+        <td><%= link_to 'Destroy', qana, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Qana', new_qana_path %>

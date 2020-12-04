@@ -1,0 +1,2 @@
+class Qana < ApplicationRecord
+end

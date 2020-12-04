@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Topic:</strong>
+  <%= @qana.topic %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @qana.question %>
+</p>
+
+<p>
+  <strong>Answer:</strong>
+  <%= @qana.answer %>
+</p>
+
+<p>
+  <strong>Createddate:</strong>
+  <%= @qana.createddate %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @qana.version %>
+</p>
+
+<%= link_to 'Edit', edit_qana_path(@qana) %> |
+<%= link_to 'Back', qanas_path %>
