@@ -1,0 +1,32 @@
+<%= form_with(model: grokking, local: true) do |form| %>
+  <% if grokking.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(grokking.errors.count, "error") %> prohibited this grokking from being saved:</h2>
+
+      <ul>
+        <% grokking.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :topic %>
+    <%= form.text_field :topic %>
+  </div>
+
+  <div class="field">
+    <%= form.label :article %>
+    <%= form.text_area :article %>
+  </div>
+
+  <div class="field">
+    <%= form.label :creationdate %>
+    <%= form.datetime_select :creationdate %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

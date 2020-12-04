@@ -1,0 +1,2 @@
+class Grokking < ApplicationRecord
+end

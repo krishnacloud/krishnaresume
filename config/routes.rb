@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :grokkings
   resources :qanas
   get 'home/about'
   root 'home#index'

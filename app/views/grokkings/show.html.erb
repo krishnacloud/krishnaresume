@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Topic:</strong>
+  <%= @grokking.topic %>
+</p>
+
+<p>
+  <strong>Article:</strong>
+  <%= @grokking.article %>
+</p>
+
+<p>
+  <strong>Creationdate:</strong>
+  <%= @grokking.creationdate %>
+</p>
+
+<%= link_to 'Edit', edit_grokking_path(@grokking) %> |
+<%= link_to 'Back', grokkings_path %>
