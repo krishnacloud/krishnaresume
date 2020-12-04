@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @aboutme.Name %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @aboutme.bio %>
+</p>
+
+<p>
+  <strong>Creationdateandtime:</strong>
+  <%= @aboutme.creationdateandtime %>
+</p>
+
+<%= link_to 'Edit', edit_aboutme_path(@aboutme) %> |
+<%= link_to 'Back', aboutmes_path %>
