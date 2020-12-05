@@ -1,0 +1,2 @@
+module CpucoresHelper
+end
