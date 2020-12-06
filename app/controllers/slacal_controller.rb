@@ -1,4 +1,10 @@
 class SlacalController < ApplicationController
-	def home
+	
+
+	def team
+		@team_number = params[:team_number]
 	end
+
+
+
 end
