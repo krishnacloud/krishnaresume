@@ -1,0 +1,2 @@
+module MachinetypeHelper
+end

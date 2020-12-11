@@ -1,0 +1,19 @@
+<h1> Machine Type </h1>
+
+<%= form_tag machinetype_index_path, :method => 'POST' do %>
+	<%= text_field_tag 'machinetype' , nil ,placeholder: "Enter machine type" , size:50 %>
+	<%= submit_tag 'Lookup' %>
+
+<% end %>
+
+<p2> [Family] + [Sub-family]* + [# of vCPUs] + [Additive Features] + [Accelerator Type]* + [Version] <p2\>
+
+<p1> <br\> <%= @i %><br\> <p1>
+
+ 
+
+
+
+ 
+
+ 

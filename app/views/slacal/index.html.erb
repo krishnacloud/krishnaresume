@@ -1,8 +1,20 @@
 <div class="main">
 	<div class="container">
-		<h1> Welcome to SLA Calculator page</h1>
-		<p1> Use the calculator to calculate sequnetial and composite SLA <%= @team_number %></p1>
+		<h1> Welcome to SLA Calculator page - Index </h1>
+		<p1> Use the calculator to calculate sequnetial and composite SLA - Index </p1>
  
+
+ 		<%= form_tag slacal_index_path ,  :method => 'POST' do %>
+			<%= text_field_tag 'System1' , nil ,placeholder: "Enter System 1 SLA" , size:50 %></br>
+			<%= text_field_tag 'System2' , nil ,placeholder: "Enter System 2 SLA" , size:50 %></br>
+			<%= text_field_tag 'System3' , nil ,placeholder: "Enter System 3 SLA" , size:50 %></br>
+			<%= text_field_tag 'System4' , nil ,placeholder: "Enter System 4 SLA" , size:50 %></br>
+
+			<%= submit_tag 'Calculate sequnetial SLA ' %>
+
+			
+		<% end %>
+		<%= @sla %>
 
 	</div>
 </div>
